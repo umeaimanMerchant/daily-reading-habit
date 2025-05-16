@@ -7,7 +7,7 @@ import google.generativeai as genai
 st.set_page_config(page_title="Daily Reading Habit", layout="centered")
 
 # === Setup Gemini API ===
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+GEMINI_API_KEY = "AIzaSyBB_mYVW5hMp0p__clSGOEMfLqdHyswWRc"
 if not GEMINI_API_KEY:
     GEMINI_API_KEY = st.text_input("Enter your Gemini API Key", type="password")
     st.stop()
