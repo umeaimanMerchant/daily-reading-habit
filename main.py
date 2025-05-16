@@ -13,7 +13,7 @@ if not GEMINI_API_KEY:
     st.stop()
 
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel('gemini-pro')
+model = genai.GenerativeModel('models/gemini-pro')
 
 # === Session State Init ===
 if "reading_history" not in st.session_state:
